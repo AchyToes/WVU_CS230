@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+.top-nav-bar {
+    width: -fit-content;
+    height: 44px;
+    display: flex;
+    align-items: left;
+    margin-left: 0px;
+    justify-content: space-between;
+    background: #F2F6FA;
+}
+
+.left-nav-item{
+    width: -fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+    background: #F2F6FA;
+    color: black;
+}
+
+.default_user_image{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    align-items: left;
+}
+.popper_image{
+    margin-top: 4px;
+    margin-left: 0px;
+}
+.dropdown_nav_item{
+    background: #F2F6FA; 
+    color: black; 
+    size: 12px;
+    line-height: 20px;
+    margin-right: 10px;
+    width: fit-content; 
+    margin: 0%; 
+    align-self: flex-end;
+}
+.dropdown_menu{
+    background-color: #F2F6FA
+}
+.envelope{
+    width:20px;
+    height:20px;
+}
+
+.btn-default:not(.dropdown-toggle):hover {
+    background-color: #F2F6FA;
+    border-color: #ccc;
+    cursor: default;
+}
+.btn-default:not(.dropdown-toggle) {
+    background-color: #F2F6FA;
+    border-color: #ccc;
+    cursor: default;
+}
+.Spacing-Element{
+    margin-right: 10px;
+}
+.Spacing-Elementii{
+    margin-right: 5px;
+}
