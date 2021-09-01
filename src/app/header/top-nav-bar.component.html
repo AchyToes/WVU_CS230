@@ -1,8 +1,4 @@
-<head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body>
+<header>
 <div class="top-nav-bar" role="toolbar">
     <div class="left-nav-item">
     <div class="default_user_image">
@@ -12,25 +8,25 @@
         alt="default_user_image.png"
         src="../../assets/default_user_avatar.png"/>
     </div>
-
-    <div class="btn-default">
-    <div class="dropdown-nav-item">
-        <a class="btn dropdown-toggle" role="button" id="navbarDropdown" data-bs-toggle="dropdown" href="#">
-            Individual
-        </a>
-        
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" > 
-            <li><a class="dropdown-item" href="#">Individual</a></li>
-            <li><a class="dropdown-item" href="#">Ira(-)</a></li>
-        </ul>
-    </div>
-    </div>
     
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+    <form>
+        <div class="row-cols-auto" style="margin-right: 10px; background-color: #f2f6fa;">
+            <div class="col-auto" style="margin: 12px 0; height: 44px; padding: 4px 10px; font-size: 12px; line-height: 1.5;">
+                <div class="jss97">
+                    <select class="form-control" id="sel1" style="background-color: #f2f6fa; border-color: #f2f6fa;">
+                        <option selected="1">Individual</option>
+                        <option value="2">IRA(-)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#09132c" class="bi bi-envelope-fill" viewBox="0 0 16 16">
         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
       </svg>
       <div class="Spacing-Element"></div>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#09132c" class="bi bi-bell" viewBox="0 0 16 16">
         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
       </svg>
       <div class="Spacing-Elementii"></div>
@@ -42,6 +38,23 @@
         margin-top=5px
         src="../../assets/popper.png"/>
     </div>
-</div>    
 </div>   
-</body>
+
+<div class="right-nav-item">
+    <div class="search-container" style="background-color: white; border-color: #f2f6fa; width: 316px">
+        <form action="/action_page.php">
+            <div class="inner-addon left-addon">
+                <span class="search-icon">
+                    <button type="button" href="#" style="background-color: white; border-color: white;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#09132c" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </button>
+                </span>
+            <input class="webull_search" type="text" placeholder="Symbol/Name" value="" style="background-color: white; border-color: #f2f6fa; width: 100%">
+            </div>
+        </form>
+    </div>
+</div>   
+</div>
+</header>
