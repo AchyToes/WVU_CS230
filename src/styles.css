@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 .top-nav-bar {
     width: -fit-content;
     height: 44px;
@@ -18,10 +19,10 @@
     background: #F2F6FA;
 }
 .right-nav-item{
-    width: -fit-content;
+    width: fit-content;
     display: flex;
     align-items: center;
-    margin-right: 13px;
+    right: 13px;
     background: #F2F6FA;
 }
 .search-container{
@@ -85,24 +86,8 @@
     margin-right: 5px;
 }
 .inner-addon { 
-    position: relative; 
+    position: flex; 
 }
-.inner-addon .search-icon {
-  position: absolute;
-  padding-left: 2px;
-  margin-top: .8px; 
-  border-radius: 0px;
-  border-style: none;
-  box-shadow: none;
-}
-
-/* align icon */
-.left-addon .search-icon  { left:  0px;}
-.right-addon .search-icon { right: 0px;}
-
-/* add padding  */
-.left-addon input  { padding-left:  30px; }
-.right-addon input { padding-right: 30px; }
 
 /* Moving to left toolbar */
 .side-nav-bar{
