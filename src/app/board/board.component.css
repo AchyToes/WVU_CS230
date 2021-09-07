@@ -1,0 +1,79 @@
+.board
+/*    {
+        position: fixed;
+        left: 60px;
+        right: 0px;
+        top: 44px;
+        /* height: 100%; 
+        bottom: 30px;
+        background: #F2F6FA;
+    } */
+    {
+        top: 44px;
+        left: 60px;
+        right: 0;
+        bottom: 30px;
+        z-index: 1;
+        position: absolute;
+        min-width: 1000px;
+        background: #E7EAEF;
+    }
+.board-container
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #E7EAEF;
+}
+.board-bar
+    {
+        display: flex;
+        height: 24px;
+        background: #FFFFFF;
+    }
+
+.menu-button
+    {
+        display: flex;
+        height: 24px;
+        width: 24px;
+        margin: 0%;
+    }
+.menu-button:hover
+{
+    display: flex;
+    height: 24px;
+    width: 48px;
+}
+.hidden{
+    display: inherit;
+}
+.bi::before{
+    display: inherit; 
+    color: black; 
+    font-size: 20px;
+    height: 24px;
+    width: 24px;
+    margin: 0%;
+    align-items: center;
+    text-align: center;
+    }
+.bi-list 
+{
+    color: black; 
+    font-size: 20px;
+    height: 24px;
+    width: 24px;
+    margin: 0%;
+    vertical-align: middle;
+    text-align: center;
+}
+.board-label
+{
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    vertical-align: middle;
+    padding-top: 2.5px;
+}
