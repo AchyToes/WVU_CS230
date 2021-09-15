@@ -1,0 +1,17 @@
+.container
+{
+    position: absolute;
+    bottom:0px;
+    left: 60px;
+    height: 30px;
+    right: 0px;
+    background: #F2F6Fa;
+}
+.date-field
+{
+    font-size: 12px;
+    position: absolute;
+    right: 0px;
+    width: 213.667px;
+    height: 100%;
+}

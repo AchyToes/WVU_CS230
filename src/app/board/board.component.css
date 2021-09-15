@@ -9,10 +9,10 @@
         background: #F2F6FA;
     } */
     {
-        top: 44px;
-        left: 60px;
+        top: 0px;
+        left: 0px;
         right: 0;
-        bottom: 30px;
+        height: 24px;
         z-index: 1;
         position: absolute;
         min-width: 1000px;
@@ -21,7 +21,7 @@
 .board-container
 {
     width: 100%;
-    height: 100%;
+    height: 24px;
     position: absolute;
     background: #E7EAEF;
 }
@@ -150,3 +150,4 @@
     vertical-align: middle;
     padding-top: 2.5px;
 }
+
