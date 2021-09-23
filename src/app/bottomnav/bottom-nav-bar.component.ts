@@ -16,14 +16,7 @@ export class BottomNavBarComponent{
   second: number;
   colon: string;
   constructor() {
-    //const dateObj = new Date();
-    //const monthNames = ["January","February","March","April","May",
-    //"June","July","August","September","October","November","December"];
-    
-    //const year = dateObj.getFullYear();
-    //const day = dateObj.getDay();
-    //this.dateMessage = month + '\n' + day + '\n' + year;
-    //document.querySelector('date').textContent = this.dateMessage;
+
     const date = new Date();
     this.day = date.getDay();
     this.month = date.getMonth();
