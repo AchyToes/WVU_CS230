@@ -15,6 +15,8 @@ import { StocksComponent } from './stocks/stocks.component';
 import { WatchlistsComponent } from './watchlists/watchlists.component';
 import { MarketsComponent } from './markets/markets.component';
 import { ScreenerComponent } from './screener/screener.component';
+import { WatchlistComponent } from './watchlist/watchlist.component';
+import { WatchlistStockComponent } from './watchlist-stock/watchlist-stock.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ScreenerComponent } from './screener/screener.component';
     WatchlistsComponent,
     MarketsComponent,
     ScreenerComponent,
-    TradeCenterComponent
+    //TradeCenterComponent,
+    WatchlistComponent,
+    WatchlistStockComponent
   ],
   imports: [
     BrowserModule,
