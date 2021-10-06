@@ -17,6 +17,8 @@ import { MarketsComponent } from './markets/markets.component';
 import { ScreenerComponent } from './screener/screener.component';
 import { WatchlistComponent } from './watchlist/watchlist.component';
 import { WatchlistStockComponent } from './watchlist-stock/watchlist-stock.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './user-info.component';
 
 @NgModule({
   declarations: [
@@ -35,11 +37,13 @@ import { WatchlistStockComponent } from './watchlist-stock/watchlist-stock.compo
     ScreenerComponent,
     //TradeCenterComponent,
     WatchlistComponent,
-    WatchlistStockComponent
+    WatchlistStockComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

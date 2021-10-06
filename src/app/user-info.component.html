@@ -1,0 +1,8 @@
+<p *ngIf='myInfo == undefined'>Failed to load user info from remote server</p>
+<div *ngIf='myInfo != undefined'>
+    <div class="row">
+        <div class="col">User: {{ myInfo.FirstName }} {{ myInfo.LastName }}</div>
+        <div class="col">Mix: {{ myInfo.mix_id }}</div>
+        <div class="col">Github: <a href="{{ myInfo.Github }}">{{ myInfo.Github }}</a></div>
+    </div>
+</div>
