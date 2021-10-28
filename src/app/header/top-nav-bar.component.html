@@ -43,9 +43,18 @@
 
 <div class="right-nav-item">
     <span class="search-container">
-            <input class="webull_search" type="text" placeholder="Symbol/Name">
-
+        <form #searchForm="ngForm"(ngSubmit)="onUpdateSearch(searchForm.value)">
+            <input class="webull_search" type="search" placeholder="Symbol/Name" ngModel name="0">
+        </form>
     </span>
+    <div *ngIf='stocks != undefined'>
+        <div class="stock-search" *ngFor="let stock of stocks;">
+            <app-stock-search
+            name={{stock.name}} 
+            index={{stock.index}}>
+            </app-stock-search>
+        </div>
+    </div>
 </div>   
 </div>
 </body>

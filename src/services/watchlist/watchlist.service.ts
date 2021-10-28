@@ -5,16 +5,21 @@ import { Stock } from 'src/app/stock.model';
 @Injectable({
   providedIn: 'root',
 })
-export class StockServiceService {
+export class WatchlistService {
   private baseUrl: string = 'https://webull-app-df1a5-default-rtdb.firebaseio.com/';
-  private stockEndpoint: string = 'Stock.json';
+  private watchlistEndpoint: string = 'watchlist_1.json/';
 
   constructor(private http:HttpClient) 
     {
     }
 
-  getStocks() 
+  getWatchlist() 
   {
-      return this.http.get<Stock[]>(this.baseUrl + this.stockEndpoint);
+      return this.http.get<Stock[]>(this.baseUrl + this.watchlistEndpoint);
+  }
+
+  addStock(sendStock: Stock[])
+  {
+    return this.http.put<Stock[]>(this.baseUrl + this.watchlistEndpoint, sendStock);
   }
 }

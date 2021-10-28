@@ -30,3 +30,12 @@
 {
     cursor: pointer;
 }
+.stock-search
+{
+    z-index: 999;
+    position: absolute;
+    display: flexbox;
+    height: fit-content;
+    width: 316px;
+    max-height: 400px;
+}
