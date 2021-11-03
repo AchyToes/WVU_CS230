@@ -1,4 +1,5 @@
 import { Component, OnInit, DoCheck, SimpleChanges, OnChanges, Input } from '@angular/core';
+import { DatabaseService } from 'src/services/database/database.service';
 import { StockServiceService } from 'src/services/stock/stock-service.service';
 import { WatchlistService } from 'src/services/watchlist/watchlist.service';
 import { Stock } from '../stock.model';
@@ -15,7 +16,9 @@ export class TopNavBarComponent {
   stocks: Stock[] = [];
   tempStocks: Stock[] = [];
   constructor(private stockServiceService: StockServiceService,
-    private watchlistService: WatchlistService) {
+    private watchlistService: WatchlistService,
+    private dbService: DatabaseService) {
+      dbService.showData();
   }
 
   ngOnInit() {

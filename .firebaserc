@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webull-app-df1a5": {
+      "hosting": {
+        "webull": [
+          "webull-app-df1a5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webull-app-df1a5"
+  }
+}

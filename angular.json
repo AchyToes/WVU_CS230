@@ -107,6 +107,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "webull:build:production",
+            "firebaseProject": "webull-app-df1a5",
+            "firebaseHostingSite": "webull-app-df1a5"
+          }
         }
       }
     }
