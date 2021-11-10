@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
 import { MarketsComponent } from './markets/markets.component';
 import { ScreenerComponent } from './screener/screener.component';
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'markets', component: MarketsComponent },
   { path: 'screener', component: ScreenerComponent },
   { path: 'trade', component: TradeCenterComponent },
-  { path: '', component: LayoutMainComponent }
+  { path: '', component: LayoutMainComponent },
+  { path: 'auth', component: AuthComponent }
 ];
 
 @NgModule({
